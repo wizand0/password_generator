@@ -268,10 +268,10 @@ QSlider::handle:horizontal {
 }</string>
         </property>
         <property name="minimum">
-         <number>12</number>
+         <number>5</number>
         </property>
         <property name="maximum">
-         <number>100</number>
+         <number>40</number>
         </property>
         <property name="orientation">
          <enum>Qt::Orientation::Horizontal</enum>
@@ -298,11 +298,14 @@ QSpinBox:hover {
         <property name="buttonSymbols">
          <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
         </property>
+        <property name="minimum">
+         <number>5</number>
+        </property>
         <property name="maximum">
-         <number>100</number>
+         <number>40</number>
         </property>
         <property name="value">
-         <number>12</number>
+         <number>9</number>
         </property>
        </widget>
       </item>

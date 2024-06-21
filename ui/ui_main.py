@@ -19,7 +19,7 @@ from PySide6.QtWidgets import (QAbstractSpinBox, QApplication, QFrame, QHBoxLayo
     QLabel, QLineEdit, QMainWindow, QPushButton,
     QSizePolicy, QSlider, QSpinBox, QVBoxLayout,
     QWidget)
-import resources
+import ui.resources
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -205,8 +205,8 @@ class Ui_MainWindow(object):
 "    margin-top: -8px;\n"
 "    margin-bottom: -8px;\n"
 "}")
-        self.slider_length.setMinimum(12)
-        self.slider_length.setMaximum(100)
+        self.slider_length.setMinimum(5)
+        self.slider_length.setMaximum(40)
         self.slider_length.setOrientation(Qt.Orientation.Horizontal)
 
         self.layout_length.addWidget(self.slider_length)
@@ -225,8 +225,9 @@ class Ui_MainWindow(object):
 "}")
         self.spinbox_length.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.spinbox_length.setButtonSymbols(QAbstractSpinBox.ButtonSymbols.NoButtons)
-        self.spinbox_length.setMaximum(100)
-        self.spinbox_length.setValue(12)
+        self.spinbox_length.setMinimum(5)
+        self.spinbox_length.setMaximum(40)
+        self.spinbox_length.setValue(9)
 
         self.layout_length.addWidget(self.spinbox_length)
 
