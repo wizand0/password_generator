@@ -1,0 +1,12 @@
+QWidget {
+    background-color: #121212;
+    color: white;
+    font-family: Verdana;
+    font-size: 16pt;
+    margin: 10px;
+}
+
+QPushButton {
+    border: 2px solid gray;
+    border-radius: 5px;
+}
