@@ -22,7 +22,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget {
-    background-color: #121212;
+    background-color: #001f0c;
     color: white;
     font-family: Verdana;
     font-size: 16pt;
@@ -272,6 +272,9 @@ QSlider::handle:horizontal {
         </property>
         <property name="maximum">
          <number>40</number>
+        </property>
+        <property name="value">
+         <number>9</number>
         </property>
         <property name="orientation">
          <enum>Qt::Orientation::Horizontal</enum>

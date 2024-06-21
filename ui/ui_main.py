@@ -31,7 +31,7 @@ class Ui_MainWindow(object):
         icon.addFile(u":/icons/icons/key_48dp.ico", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet(u"QWidget {\n"
-"    background-color: #121212;\n"
+"    background-color: #001f0c;\n"
 "    color: white;\n"
 "    font-family: Verdana;\n"
 "    font-size: 16pt;\n"
@@ -207,6 +207,7 @@ class Ui_MainWindow(object):
 "}")
         self.slider_length.setMinimum(5)
         self.slider_length.setMaximum(40)
+        self.slider_length.setValue(9)
         self.slider_length.setOrientation(Qt.Orientation.Horizontal)
 
         self.layout_length.addWidget(self.slider_length)
